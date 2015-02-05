@@ -8,7 +8,7 @@ import com.thoughtworks.selenium.DefaultSelenium;
 
 public class StartSelenium {
 	public DefaultSelenium start() {
-		String filePathString="src/SeleniumConnectArguments.properties";
+		String filePathString="files/SeleniumConnectArguments.properties";
 		
 		String serverHost="";
 		int serverPort;
@@ -36,7 +36,7 @@ public class StartSelenium {
 	}
 	
 	public DefaultSelenium startAssignBrowser(String browserType) {
-		String filePathString="src/SeleniumConnectArguments.properties";
+		String filePathString="files/SeleniumConnectArguments.properties";
 		
 		String serverHost="";
 		int serverPort;

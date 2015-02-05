@@ -3,12 +3,12 @@ package com.jjzhai.testcase;
 import com.jjzhai.common.StartSelenium;
 import com.thoughtworks.selenium.DefaultSelenium;
 
-public class Testcase001 {
+public class TestCase001 {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public void testCase() {
 		// TODO Auto-generated method stub	
 		DefaultSelenium selenium = null;
 		StartSelenium startSelenium = new StartSelenium();
