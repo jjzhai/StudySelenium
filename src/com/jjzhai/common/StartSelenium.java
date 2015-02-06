@@ -8,7 +8,7 @@ import com.thoughtworks.selenium.DefaultSelenium;
 
 public class StartSelenium {
 	public DefaultSelenium start() {
-		String filePathString="files/SeleniumConnectArguments.properties";
+		String propertiesAddress="files/SeleniumConnectArguments.properties";
 		
 		String serverHost="";
 		int serverPort;
@@ -18,7 +18,7 @@ public class StartSelenium {
 		Properties properties = new Properties();
 		
 		try {
-			InputStream inputStream = new FileInputStream(filePathString);					
+			InputStream inputStream = new FileInputStream(propertiesAddress);					
 			properties.load(inputStream);								
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -36,7 +36,7 @@ public class StartSelenium {
 	}
 	
 	public DefaultSelenium startAssignBrowser(String browserType) {
-		String filePathString="files/SeleniumConnectArguments.properties";
+		String propertiesAddress="files/SeleniumConnectArguments.properties";
 		
 		String serverHost="";
 		int serverPort;
@@ -46,7 +46,7 @@ public class StartSelenium {
 		Properties properties = new Properties();
 		
 		try {
-			InputStream inputStream = new FileInputStream(filePathString);					
+			InputStream inputStream = new FileInputStream(propertiesAddress);					
 			properties.load(inputStream);								
 		} catch (Exception e) {
 			// TODO: handle exception

@@ -8,12 +8,10 @@ public class TestCase001 {
 	/**
 	 * @param args
 	 */
-	public void testCase() {
-		// TODO Auto-generated method stub	
-		DefaultSelenium selenium = null;
+	public void testCase() {		
 		StartSelenium startSelenium = new StartSelenium();
-		//startSelenium.start(selenium);	
-		selenium = startSelenium.startAssignBrowser("firefox");
+		//DefaultSelenium selenium = startSelenium.start();	
+		DefaultSelenium selenium = startSelenium.startAssignBrowser("firefox");
 		//selenium.windowFocus();
 		selenium.open("http://www.baidu.com");
 		selenium.open("http://www.hao123.com");
