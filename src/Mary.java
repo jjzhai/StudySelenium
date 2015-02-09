@@ -5,8 +5,8 @@ import com.jjzhai.testcase.*;
 public class Mary {
 
 	public static void main(String[] args) {
-//		StartSeleniumServer startSeleniumServer = new StartSeleniumServer();
-//		startSeleniumServer.start();
+		StartSeleniumServer startSeleniumServer = new StartSeleniumServer();
+		startSeleniumServer.start();
 		/*
 		 * run TestCase001
 		 */
@@ -15,7 +15,7 @@ public class Mary {
 		/*
 		 * run TestSelect
 		 */
-		TestSelect testSelect = new TestSelect();
-		testSelect.test();
+//		TestSelect testSelect = new TestSelect();
+//		testSelect.test();
 	}
 }
