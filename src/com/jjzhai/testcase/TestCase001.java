@@ -1,6 +1,5 @@
 package com.jjzhai.testcase;
 
-import com.jjzhai.common.StartSelenium;
 import com.thoughtworks.selenium.DefaultSelenium;
 
 public class TestCase001 {
@@ -8,11 +7,7 @@ public class TestCase001 {
 	/**
 	 * @param args
 	 */
-	public void testCase() {		
-		StartSelenium startSelenium = new StartSelenium();
-		//DefaultSelenium selenium = startSelenium.start();	
-		DefaultSelenium selenium = startSelenium.startAssignBrowser("firefox");
-		//selenium.windowFocus();
+	public void testCase(DefaultSelenium selenium) {		
 		selenium.open("http://www.baidu.com");
 		selenium.open("http://www.hao123.com");
 		try {
@@ -49,6 +44,5 @@ public class TestCase001 {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		selenium.close();
 	}
 }
